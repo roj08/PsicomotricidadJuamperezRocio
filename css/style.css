@@ -664,6 +664,99 @@ main{
     text-align: center;
 }
 
+.serv1::before{
+    content: "Talleres de Juego";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.877);
+    transition: .5s ease;
+}
+
+.serv1::after{
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus nam quidem eaque sapiente asperiores. Tempora.";
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.serv1:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.serv1:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.serv2::before{
+    content: "Atención Individual";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.877);
+    transition: .5s ease;
+}
+
+.serv2::after{
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus nam quidem eaque sapiente asperiores. Tempora.";
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.serv2:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.serv2:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.serv3::before{
+    content: "Modalidad Presencial y/o Virtual";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.877);
+    transition: .5s ease;
+}
+
+.serv3::after{
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus nam quidem eaque sapiente asperiores. Tempora.";
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.serv3:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.serv3:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
 @media only screen and (min-width:615px){
 
     .mainServicios{
@@ -694,6 +787,15 @@ main{
     .serv3{
         grid-column: 1/3;
         grid-row: 2;
+    }
+    .serv1::after{
+        font-size: 14px;
+    }
+    .serv2::after{
+        font-size: 14px;
+    }
+    .serv3::after{
+        font-size: 14px;
     }
 
 }
