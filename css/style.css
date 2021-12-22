@@ -1,0 +1,1069 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* comienza header */
+
+.contenedorHeader{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 110px;
+    background-color: #f5d7c5;
+    border: #282739 solid 2px;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 3px;
+    grid-column: 1;
+}
+
+ul{
+    list-style: none;
+}
+.menu{
+    font-size: 1em;
+    margin-top: 38px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.menu1{
+    grid-column: 2;
+}
+.menu2{
+    grid-column: 3;
+}
+.menu3{
+    grid-column: 1;
+}
+.menu4{
+    grid-column: 2;
+}
+.menu5{
+    grid-column: 3;
+}
+
+a{
+    color: #282739;
+}
+a:hover{
+    color:#34334d;
+}
+a:active{
+    color: #34334d;
+}
+
+@media only screen and (min-width:545px){
+    .contenedorHeader{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .menu1{
+        grid-column: 2;
+    }
+    .menu2{
+        grid-column: 3;
+    }
+    .menu3{
+        grid-column: 4;
+    }
+    .menu4{
+        grid-column: 5;
+    }
+    .menu5{
+        grid-column: 6;
+    }
+}
+
+/* fin header */
+
+/* comienza main index*/
+
+main{
+    background-color: #282739;
+    height: 500px;
+}
+
+.subsMain{
+    text-align: center;
+    color: #f5d7c5;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.pMain {
+    color: #f5d7c5;
+    padding-top: 50px;
+    font-size: 15px;
+}
+
+.contenedorMain{
+    padding: 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 40px 40px 200px 40px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.subsMain1{
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.subsMain2{
+    grid-column: 1/4;
+    grid-row: 2;
+    align-self: start;
+    letter-spacing: 3px;
+}
+
+.imgMain{
+    grid-column: 1/4;
+    grid-row: 3/5;
+    height: 150px;
+    width: auto;
+    justify-self: center;
+}
+
+.pMain1 {
+    grid-column: 1/4;
+    grid-row: 3;
+    z-index: 1;
+    background-color: #28273983;
+    height: 243px;
+    align-self: center;
+    margin-top: 11%;
+}
+
+.pMain2{
+    grid-column: 1/4;
+    grid-row: 4;
+    align-self: flex-start;
+    z-index: 1;
+    padding: 0;
+}
+
+@media only screen and (min-width:615px) and (max-width:1023px){
+
+    main{
+        background-color: #282739;
+        height: 700px;
+    }
+
+    .contenedorMain{
+        display: grid;
+        grid-auto-rows: 100px 100px 200px 100px;
+    }
+
+    .subsMain1{
+        grid-column: 1/4;
+        grid-row: 1;
+        font-size: 40px;
+    }
+    
+    .subsMain2{
+        grid-column: 1/4;
+        grid-row: 2;
+        align-self: start;
+        letter-spacing: 3px;
+        font-size: 40px;
+        z-index: 2;
+    }
+    
+    .imgMain{
+        grid-column: 1/4;
+        grid-row: 3/5;
+        height: 380px;
+        width: auto;
+        justify-self: center;
+    }
+    
+    .pMain1 {
+        grid-column: 1/4;
+        grid-row: 3;
+        z-index: 1;
+        background-color: #28273983;
+        height: 420px;
+        padding-top: 120px;
+        width: 575px;
+        justify-self: center;
+        font-size: 20px;
+    }
+    
+    .pMain2{
+        grid-column: 1/4;
+        grid-row: 4;
+        z-index: 1;
+        font-size: 20px;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    main{
+        background-color: #282739;
+        height: 850px;
+    }
+
+    .contenedorMain{
+        display: grid;
+        grid-auto-rows: 100px 100px 400px 100px;
+    }
+
+    .subsMain1{
+        grid-column: 1/4;
+        grid-row: 1;
+        font-size: 40px;
+    }
+    
+    .subsMain2{
+        grid-column: 1/4;
+        grid-row: 2;
+        align-self: start;
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+    
+    .imgMain{
+        grid-column: 1;
+        grid-row: 3/5;
+        height: 380px;
+        width: auto;
+    }
+    
+    .pMain1 {
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 20px;
+    }
+    
+    .pMain2{
+        grid-column: 2;
+        grid-row: 4;
+        align-self: start;
+        padding-top: 0;
+        font-size: 20px;
+    }
+}
+
+/* fin main index */
+
+
+/* comienza que es la psicomotricidad */
+
+.mainQueEsPsico{
+    height: 850px;
+}
+.hQueEsPsico{
+    font-size: 30px;
+}
+.subsQueEsPsico{
+    text-align: center;
+    color: #f5d7c5;
+    padding-top: 2%;
+}
+
+.descQueEs {
+    padding-top: 2%;
+    font-size: 15px;
+}
+.contenedorQueEsPsico{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 120px;
+    text-align: center;
+    padding: 5%;
+}
+
+.item{
+    color: #282739;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #f5d7c5;
+    border: #f7b993 solid 1px;
+    border-radius: 5px;
+    padding: 7%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+
+.item1{
+    grid-column: 1;
+}
+.item2{
+    grid-column: 1;
+}
+.item3{
+    grid-column: 1;
+}
+.item4{
+    grid-column: 1;
+}
+
+.item1::before{
+    content: "Dominio Corporal";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.877);
+    transition: .5s ease;
+}
+
+.item1::after{
+    content: "Se trabaja la consciencia de las dimensiones del propio cuerpo, con el fin de que el individuo conozca su “envase” y se sienta parte de él.";
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.item1:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.item1:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.item2::before{
+    content: "Lateralidad";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.877);
+    transition: .5s ease;
+}
+
+.item2::after{
+    content: "Es el fenómeno que ocurre cuando un individuo domina mejor un lado de su cuerpo que otro. La lateralidad se debe definir de forma natural.";
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.item2:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.item2:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.item3::before{
+    content: "Equilibrio";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.877);
+    transition: .5s ease;
+}
+
+.item3::after{
+    content: "Definimos equilibrio como la capacidad para mantenerse estable mientras se realizan otras actividades relacionadas con la motricidad.";
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.item3:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.item3:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.item4::before{
+    content: "Reflejos";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.877);
+    transition: .5s ease;
+}
+
+.item4::after{
+    content: "La psicomotricidad también trabaja la capacidad del ser humano para reaccionar o responder a un estímulo externo.";
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.item4:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.item4:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+
+@media only screen and (min-width:615px) and (max-width:1023px){
+
+    .contenedorQueEsPsico{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-auto-rows: 200px;
+        text-align: center;
+        padding: 8% 5%;
+    }
+    
+    .item{
+        height: 150px;
+        font-size: 25px;
+    }
+    
+    .item1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .item2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .item3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .item4{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .item1::after{
+        font-size: 14px;
+    }
+
+    .item2::after{
+        font-size: 14px;
+    }
+
+    .item3::after{
+        font-size: 14px;
+    }
+
+    .item4::after{
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (min-width:1024px){
+
+    .hQueEsPsico{
+        font-size: 40px;
+    }
+    
+    .descQueEs {
+        padding-top: 2%;
+        font-size: 20px;
+    }
+    .contenedorQueEsPsico{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-auto-rows: 250px;
+        text-align: center;
+        padding: 8% 5%;
+    }
+    
+    .item{
+        font-size: 30px;
+        height: 200px;
+    }
+    
+    .item1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .item2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .item3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .item4{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .item1::after{
+        font-size: 20px;
+    }
+
+    .item2::after{
+        font-size: 20px;
+    }
+
+    .item3::after{
+        font-size: 20px;
+    }
+
+    .item4::after{
+        font-size: 20px;
+    }
+}
+
+/* fin que es la psicomotricidad */
+
+/* comienza quien soy */
+
+.mainQuien{
+    height: 600px;
+}
+.mainContenedorQuien{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 300px;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.hQuien{
+    text-align: center;
+    color: #f5d7c5;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.imgQuien{
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.pQuien{
+    color: #f5d7c5;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media only screen and (min-width:928px){
+
+    .mainQuien{
+        height: 700px;
+    }
+    .mainContenedorQuien{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 500px;
+    }
+    
+    .hQuien{
+        text-align: center;
+        color: #f5d7c5;
+        font-size: 40px;
+        font-weight: bolder;
+        padding-top: 3%;
+        grid-column: 1/3;
+    }
+    .imgQuien{
+        height: 500px;
+        width: auto;
+        margin-left: 10%;
+        border-radius: 15px;
+        grid-column: 1;
+        grid-row: 2/4;
+    }
+    
+    .pQuien{
+        padding-right: 10%;
+        grid-column: 2;
+        grid-row: 2/4;
+        font-size: 20px;
+    }
+}
+/* fin quien soy */
+
+/* comienza servicios */
+
+.mainServicios{
+    height: 600px;
+}
+.hServicios{
+    text-align: center;
+    color: #f5d7c5;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 4%;
+}
+
+.serv{
+    color: #282739;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #f5d7c5;
+    border: #f7b993 solid 1px;
+    border-radius: 5px;
+    padding: 7%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+.contenedorServicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    grid-template-rows: 150px 150px 150px;
+    text-align: center;
+    padding: 8% 5%;
+    text-align: center;
+}
+
+@media only screen and (min-width:615px){
+
+    .mainServicios{
+        height: 700px;
+    }
+
+    .hServicios{
+        font-size: 40px;
+    }
+    
+    .serv{
+        font-size: 20px;
+        height: 200px;
+    }
+    .contenedorServicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 250px);
+    }
+    .serv1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .serv2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .serv3{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+}
+
+/* fin servicios */
+
+/* comienza contacto */
+
+.mainContacto{
+    height: 800px;
+}
+.hContacto{
+    text-align: center;
+    color: #f5d7c5;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-top: 4%;
+    height: 40px;
+}
+
+.contenedorContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 200px 400px 100px;
+    text-align: center;
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.formulario {
+    /* padding-left: 3%;
+    padding-top: 5%; */
+    font-weight: bold;
+    float: left;
+    /* grid-column: 1;*/
+    grid-row: 2
+}
+
+#formatoForm {
+    border: 3px solid #f5d7c5;
+    width: 250px;
+    margin: auto;
+    color: #f5d7c5;
+    font-size: 15px;
+    text-align: start;
+}
+
+#formatoForm ol{
+    list-style: none;
+}
+
+#formatoForm ol li{
+    padding-bottom: 3px;
+}
+
+#formatoForm ol li label{
+    width: 100px;
+    float: left;
+    text-align: left;
+}
+
+#formatoForm input[type=text] {
+    border: 2px solid #f5d7c5;
+    font-size: 15px;
+    width: 120px;
+}
+
+#formatoForm input[type=number] {
+    border: 2px solid #f5d7c5;
+    font-size: 15px;
+    width: 120px;
+}
+
+#formatoForm input[type=submit]{
+    margin-left: 32%;
+    padding: 3px;
+    color: #282739;
+    background-color: #f5d7c5;
+    border: 1px solid #000000;
+    font-size: 15px;
+}
+
+#formatoForm textarea{
+    border: 2px solid #f5d7c5;
+    font-size: 15px;
+    width: 120px;
+    height: 150px;
+}
+
+#formatoForm input[type=reset]{
+    padding: 3px;
+    color: #282739;
+    background-color: #f5d7c5;
+    border: 1px solid #000000;
+    font-size: 15px;
+}
+
+.textoContacto{
+    color: #f5d7c5;
+    font-size: 17px;
+    text-align: center;
+    /* grid-column: 2; */
+    grid-row: 1;
+    padding: 10%;
+}
+
+.logos{
+    height: 70px;
+    width: auto;
+    /* grid-column: 2; */
+    grid-row: 3;
+}
+
+.logoInst{
+    height: 70px;
+    width: auto;
+}
+.logoWpp{
+    height: 70px;
+    width: auto;
+}
+
+@media only screen and (min-width:500px) and (max-width:767px){
+
+    .mainContacto{
+        height: 900px;
+    }
+    .hContacto{
+        font-size: 40px;
+        padding-top: 4%;
+        height: 40px;
+    }
+    
+    .contenedorContacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-template-rows: 200px 500px 150px;
+        text-align: center;
+        padding: 5%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .formulario {
+        grid-row: 2
+    }
+    
+    #formatoForm {
+        width: 450px;
+        font-size: 20px;
+    }
+    
+    #formatoForm ol li{
+        padding-bottom: 5px;
+    }
+    
+    #formatoForm ol li label{
+        width: 120px;
+        width: 250px;
+    }
+    
+    #formatoForm input[type=text] {
+        font-size: 15px;
+        width: 150px;
+    }
+    
+    #formatoForm input[type=number] {
+        font-size: 15px;
+        width: 150px;
+    }
+    
+    #formatoForm input[type=submit]{
+        margin-left: 32%;
+        padding: 3px;
+        font-size: 20px;
+    }
+    
+    #formatoForm textarea{
+        font-size: 15px;
+        width: 150px;
+    }
+    
+    #formatoForm input[type=reset]{
+        padding: 3px;
+        font-size: 20px;
+    }
+    
+    .textoContacto{
+        font-size: 20px;
+        grid-row: 1;
+        padding: 10%;
+    }
+    
+    .logos{
+        height: 90px;
+        width: auto;
+        grid-row: 3;
+    }
+    
+    .logoInst{
+        height: 95px;
+        width: auto;
+    }
+    .logoWpp{
+        height: 95px;
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width:768px){
+
+    .hContacto{
+        font-size: 40px;
+        padding-top: 4%;
+    }
+    
+    .contenedorContacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-template-rows: repeat(2, 250px);
+        text-align: center;
+        padding: 8% 4% 8% 8%;
+        text-align: center;
+    }
+    
+    .formulario {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+    
+    #formatoForm {
+        width: 450px;
+        font-size: 20px;
+    }
+    
+    #formatoForm ol li{
+        padding-bottom: 5px;
+    }
+    
+    #formatoForm ol li label{
+        width: 120px;
+        text-align: left;
+        width: 200px;
+    }
+    
+    #formatoForm input[type=text] {
+        font-size: 15px;
+        width: 200px;
+    }
+    
+    #formatoForm input[type=number] {
+        font-size: 15px;
+        width: 200px;
+    }
+    
+    #formatoForm input[type=submit]{
+        margin-left: 32%;
+        padding: 3px;
+        font-size: 20px;
+    }
+    
+    #formatoForm textarea{
+        font-size: 15px;
+        width: 200px;
+    }
+    
+    #formatoForm input[type=reset]{
+        font-size: 20px;
+    }
+    
+    .textoContacto{
+        color: #f5d7c5;
+        font-size: 20px;
+        text-align: center;
+        grid-column: 2;
+        grid-row: 1;
+        padding: 20%;
+        align-self: center;
+    }
+    
+    .logos{
+        height: 90px;
+        width: auto;
+        grid-column: 2;
+        grid-row: 2;
+        align-self: center;
+    }
+    
+    .logoInst{
+        height: 95px;
+        width: auto;
+    }
+    .logoWpp{
+        height: 95px;
+        width: auto;
+    }
+}
+
+/* fin contacto */
+
+/* comienza el footer */
+
+.contenedorFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: repeat(4, 50px);
+    background-color: #f5d7c5;
+    border: #282739 solid 2px;
+    width: 100%;
+}
+.footerR1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.footerR2{
+    grid-column: 1;
+    grid-row: 2;
+}
+.footerR3{
+    grid-column: 1;
+    grid-row: 3;
+}
+.footerR4{
+    grid-column: 1;
+    grid-row: 4;
+}
+.footerL1{
+    grid-column: 2;
+    grid-row: 1;
+}
+.footerL2{
+    grid-column: 2;
+    grid-row: 2;
+}
+.footerL3{
+    grid-column: 2;
+    grid-row: 3;
+}
+.footerL4{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.serviciosFooter {
+    font-size: 0.8em;
+    color: #282739;
+    font-weight: bold;
+}
+.datosContactoFooter {
+    font-size: 0.8em;
+    color: #282739;
+    font-weight: bold;
+    text-align: right;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width:500px){
+    .serviciosFooter {
+        font-size: 1em;
+    }
+    .datosContactoFooter {
+        font-size: 1em;
+    }
+}

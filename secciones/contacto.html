@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <div class="contenedorHeader">
+                <a href="../index.html"><img class="logo" src="../imagenes/logo.JPG" alt="logo"></a>
+                <li class="menu menu1"><a href="../index.html">Inicio</a></li>
+                <li class="menu menu2"><a href="queeslapsicomotricidad.html">¿Qué es la psicomotricidad?</a></li>
+                <li class="menu menu3"><a href="quiensoy.html">¿Quién soy?</a></li>
+                <li class="menu menu4"><a href="servicios.html">Servicios</a></li>
+                <li class="menu menu5"><a href="#">Contacto</a></li>
+            </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainContacto">
+        <h2 class="hContacto">Contacto</h2>
+
+        <div class="contenedorContacto">
+
+        <div class="formulario">
+            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" id="formatoForm">
+                <fieldset>
+                    <ol>
+                        <li><label>Nombre </label><input type="text" required> <br>
+                        <li><label>Email </label><input type="text" required></li> <br>
+                        <li><label>Edad </label><input type="number" required></li> <br>
+                        <li><label>Teléfono de contacto </label><input type="text" required></li> <br>
+                        <li><label>Consulta </label><textarea name="areadetexto" id="" cols="30" rows="10" placeholder="Escribe tu consulta aquí"></textarea></li> <br>
+                    </ol>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </fieldset>
+            </form>
+        </div>
+        <div class="textoContacto">
+            <p>Puedes enviar tus dudas a través del formulario de contacto. También te invito a visitar mis redes sociales y comunicarte a través de las mismas.</p>
+        </div>
+        <div class="logos">
+            <a href="https://www.instagram.com/psicomotricidad.cora/"><img src="../imagenes/instagramLogo.png" alt="instagram" class="logoInst"></a>
+            <img src="../imagenes/whatsappLogo.png" alt="whatsapp" class="logoWpp">
+        </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenedorFooter">
+            <div class="serviciosFooter">
+                <h3 class="footerL1">Servicios</h3>
+                <h4 class="footerL2">Talleres de juegos</h4>
+                <h4 class="footerL3">Atención individual</h4>
+                <h4 class="footerL4">Modalidad presencial y/o virtual</h4>
+            </div>
+
+            <div class="datosContactoFooter">
+                <h3 class="footerR1">Datos de contacto</h3>
+                <h4 class="footerR2">Celular</h4>
+                <h4 class="footerR3">Email</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
