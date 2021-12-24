@@ -1,0 +1,16 @@
+.rounded-circle {
+    height: 80px;
+    width: auto;
+}
+
+.navbar {
+    background-color: #ECCBB8;
+}
+
+.navbar-nav{
+    align-content: flex-end;
+}
+
+.nav-link{
+    color: #282739;
+}
