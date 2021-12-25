@@ -1,16 +1,35 @@
+html, body{
+    height: 100vh;
+}
+
 .rounded-circle {
     height: 80px;
     width: auto;
 }
 
+@media only screen and (max-width:575px) {
+.rounded-circle {
+    display: none;
+}
+}
 .navbar {
     background-color: #ECCBB8;
 }
 
-.navbar-nav{
-    align-content: flex-end;
+.nav-link{
+    color: #282739 !important;
 }
 
-.nav-link{
+.buttonColor{
+    background-color: #282739;
+}
+
+.mainInicio{
+    background-color: #282739;
+    color: #ECCBB8;
+}
+
+.containerServicios{
+    background-color: #ECCBB8;
     color: #282739;
 }
