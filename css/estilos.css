@@ -24,9 +24,22 @@ html, body{
     background-color: #282739;
 }
 
-.mainInicio{
+.mainCol{
     background-color: #282739;
     color: #ECCBB8;
+}
+
+.card-header {
+    background-color: #ECCBB8;
+    font-weight: bolder;
+}
+
+.card-body {
+    background-color: #282739;
+}
+
+.card-link{
+    color: #282739 !important;
 }
 
 .containerServicios{
