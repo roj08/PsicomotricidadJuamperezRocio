@@ -42,6 +42,38 @@ html, body{
     color: #282739 !important;
 }
 
+.imgQuien {
+    height: 400px;
+    width: auto;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .imgQuien{
+        height: 300px;
+        width: auto;
+    }
+}
+
+.btn {
+    background-color: #ECCBB8;
+    color: #282739;
+    border: #ECCBB8;
+}
+
+.logo{
+    height: 60px;
+    width: auto;
+}
+
+.logoInst{
+    padding-left: 90%;
+}
+
+.logoWpp{
+    padding-left: 10%;
+}
+
 .containerServicios{
     background-color: #ECCBB8;
     color: #282739;
